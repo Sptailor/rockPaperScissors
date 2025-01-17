@@ -101,7 +101,7 @@ function playGame() {
     rockBtn.addEventListener('click', () => playRound("rock", getComputerChoice()));
 
     paperBtn.addEventListener('click', () => playRound("paper", getComputerChoice()));
-    scissorBtn.addEventListener('click', () => playRound("scissor", getComputerChoice()));
+    scissorBtn.addEventListener('click', () => playRound("scissors", getComputerChoice()));
 
     compScore.innerHTML = computerScore;
     playerScore.innerHTML = humanScore;
