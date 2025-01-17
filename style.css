@@ -1,28 +1,29 @@
-
+/* Reset and Normalize */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  
   html, body {
     height: 100%;
     font-family: Arial, sans-serif;
     background-image: url(images/backGround.jpg);
     background-size: cover;
+    background-position: center;
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
+    padding: 0;
   }
   
   /* Outer Container */
   #outer-div {
-    width: 100%; 
-    height: 90%; 
-    max-width: 1200px; 
+    width: 100%;
+    height: 90%;
+    max-width: 1200px;
     padding: 3rem;
     text-align: center;
     background: #ffffff;
@@ -32,17 +33,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
   }
   
   /* Headings */
   h2 {
-    font-size: 4rem; 
+    font-size: 4rem;
     margin-bottom: 2rem;
     color: #034e9e;
   }
   
   h4 {
-   
+    font-size: 1.5rem;
     margin: 0.5rem 0;
     color: #444;
   }
@@ -50,24 +52,24 @@
   /* Players Section */
   #players-div {
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     width: 100%;
     margin: 1.5rem 0;
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
   }
   
   /* Pictures Section */
   #pictures {
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     margin: 2rem 0;
   }
   
   #pictures img {
-    width: 40%; 
-    height: 25vh; 
+    width: 30%;
+    height: 20vh;
     object-fit: cover;
     border: 2px solid #ddd;
     border-radius: 10px;
@@ -79,7 +81,7 @@
   #button-div {
     margin: 2rem 0;
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     width: 100%;
   }
   
@@ -88,13 +90,15 @@
     color: #fff;
     border: none;
     border-radius: 8px;
-    padding: 1rem 2rem; 
-    font-size: 1.5rem; 
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
   }
+  
+  /* Reset Button */
   #button-div button#reset {
-    background-color: #dc3545; 
+    background-color: #dc3545;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -105,19 +109,17 @@
   }
   
   #button-div button#reset:hover {
-    background-color: #c82333; 
-    transform: scale(1.05); 
+    background-color: #c82333;
+    transform: scale(1.05);
   }
   
   #button-div button#reset:active {
-    background-color: #bd2130; 
+    background-color: #bd2130;
   }
-  
-
   
   #button-div button:hover {
     background-color: #0056b3;
-    transform: scale(1.1); 
+    transform: scale(1.1);
   }
   
   #button-div button:active {
@@ -130,7 +132,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
-    font-size: 2rem; 
+    font-size: 2rem;
     font-weight: bold;
   }
   
@@ -142,13 +144,22 @@
     margin: 0 1rem;
     color: #333;
   }
-  footer{
+  
+  /* Footer */
+  footer {
     margin-top: 5%;
     font-size: small;
     align-self: self-end;
- 
   }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For screens smaller than 768px (tablets) */
   @media (max-width: 768px) {
+    #outer-div {
+      padding: 2rem;
+    }
+  
     h2 {
       font-size: 3rem;
     }
@@ -158,25 +169,25 @@
     }
   
     #players-div {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
   
     #pictures img {
       width: 40%;
-      height: 20vh;
+      height: 18vh;
     }
   
     #button-div button {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       padding: 0.75rem 1.5rem;
     }
   
     #score-div {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
   }
   
-  /* For screens smaller than 480px */
+  /* For screens smaller than 480px (mobile) */
   @media (max-width: 480px) {
     #outer-div {
       padding: 1.5rem;
@@ -191,20 +202,38 @@
     }
   
     #players-div {
+      flex-direction: column;
       font-size: 1.5rem;
     }
   
+    #pictures {
+      flex-direction: column;
+      margin: 1rem 0;
+    }
+  
     #pictures img {
-      width: 50%;
-      height: 18vh;
+      width: 60%;
+      height: 15vh;
+    }
+  
+    #button-div {
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem 0;
     }
   
     #button-div button {
-      font-size: 1.1rem;
-      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      padding: 0.75rem 1.5rem;
+      margin-bottom: 0.5rem;
     }
   
     #score-div {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
+    }
+  
+    footer {
+      font-size: small;
     }
   }
+  
