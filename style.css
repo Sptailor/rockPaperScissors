@@ -175,6 +175,7 @@
     #pictures img {
       width: 45%;
       height: 18vh;
+      object-fit: scale-down;
     }
   
     #button-div button {
