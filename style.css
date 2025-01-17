@@ -148,3 +148,63 @@
     align-self: self-end;
  
   }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 3rem;
+    }
+  
+    h4 {
+      font-size: 1.2rem;
+    }
+  
+    #players-div {
+      font-size: 1.8rem;
+    }
+  
+    #pictures img {
+      width: 40%;
+      height: 20vh;
+    }
+  
+    #button-div button {
+      font-size: 1.2rem;
+      padding: 0.75rem 1.5rem;
+    }
+  
+    #score-div {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* For screens smaller than 480px */
+  @media (max-width: 480px) {
+    #outer-div {
+      padding: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 2.5rem;
+    }
+  
+    h4 {
+      font-size: 1rem;
+    }
+  
+    #players-div {
+      font-size: 1.5rem;
+    }
+  
+    #pictures img {
+      width: 50%;
+      height: 18vh;
+    }
+  
+    #button-div button {
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    #score-div {
+      font-size: 1.3rem;
+    }
+  }
