@@ -5,3 +5,5 @@ Features:
 - Visual Feedback: Each choice is visually represented using images, providing clear feedback for both the player and the computer.
 - Responsive Reset Button: Users can reset the game to start over at any time with a single click.
 - Modern Styling: Styled with attention to detail, the game includes hover effects and animations for an interactive feel.
+
+Live demo at https://sptailor.github.io/rockPaperScissors/
